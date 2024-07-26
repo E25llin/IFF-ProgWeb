@@ -62,3 +62,19 @@ function numero (n1,n2) {
     }
 }
 numero(4,2)
+
+function parametros (salario,  quantidadeDeHorasExtras, quantidadeDeFaltas) {
+          var valorhoratrabalhada = salario / 176
+          var valorfaltas = valorhoratrabalhada * quantidadeDeFaltas * 8
+          var valorhoraextra = quantidadeDeHorasExtras * 1.5 * valorhoratrabalhada
+          var salarioliquido = salario + valorhoraextra - valorfaltas
+
+          console.log(`Salário: ${salario}\n-Salari oliquido:${salarioliquido}\n-Total em horas extras:${valorhoraextra}\n-Total em faltas:${valorfaltas}`);
+ }
+parametros(5000, 8, 1)
+
+const lua = [2,4,67,8,9,90,0,"Dia","hoje","tio","yellow","ui"]
+function retor (lua) {
+console.log(`${lua[0]} ${lua [lua.length - 1]}`)
+}
+retor(lua)
